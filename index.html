@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Payment details</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">	
+	<div class="payment-button">
+		<h3>payment details</h3>
+			<div class="form">
+				<p>Choose you payment method</p>
+				<form>
+					<div class="radio radio1">
+						<input type="radio" id="ra1" name="radio">
+						<label for="ra1"><span>PayPal</span>Safe payment online. Credit card needed.</label>
+					</div>
+					<div class="radio radio2">
+						<input type="radio" id="ra2" name="radio">
+						<label for="ra2"><span>Credit Card</span>Safe money transfer using your bank account</label>
+					</div>
+					<div class="credit-card number">
+						<h4>credit card number</h4>
+						<input type="text" placeholder="0000 0000 0000 ****">
+					</div>
+					<div class="credit-card code">
+						<h4>cvv <span>code</span></h4>
+						<input type="number" id="card">
+					</div>
+					<div class="credit-card date">
+						<h4>expiry date</h4>
+						<input type="text" placeholder="MM/YY" id="card">
+					</div>
+				</form>
+				<button type="submit"><span></span>submit now</button>
+			</div>
+	</div>
+</div>
+</body>
+</html>

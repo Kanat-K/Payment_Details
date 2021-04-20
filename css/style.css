@@ -1,0 +1,194 @@
+body{
+	font-family: Arial, sans-serif;
+	color: #000;
+	margin: 0;
+	min-width: 980px;
+	background-color: #8ca93f;
+}
+.container{
+	width: 616px;
+	margin: 0 auto;
+}
+h3{
+	display: block;
+	width: 310px;
+	margin: 57px auto 0;
+	padding: 0 0 75px 42px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 29px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #4b610f;
+	position: relative;
+	background: url(../img/check.jpg) 50% 100% no-repeat;
+	cursor: pointer;
+	letter-spacing: 0.03em;
+}
+.form{
+	display: none;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 36px 48px;
+	margin: 45px 0 0 0;
+	position: relative;
+}
+.payment-button:hover .form{
+	display: block;
+}
+.form::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+	border-width: 0 29px 38px 29px;
+	border-color: transparent transparent #fff transparent;
+	top: -38px;
+	left: 279px;
+}
+.payment-button > h3::before{
+	content: url(../img/euro-icon.jpg);
+	position: absolute;
+	top: 0;
+	left: 11px;
+}
+.radio{
+	display: block;
+	border-bottom: 1px solid #d0d4d5;
+	padding: 18px 0 24px;
+	margin: 10px 0 28px 0;
+}
+.form > p{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1px;
+}
+.form > p::after{
+	content: url(../img/green-down-icon.jpg);
+	padding: 0 5px;
+}
+.radio span, label{
+	font-family: 'Ubuntu', sans-serif;
+}
+.radio span{
+	font-weight: 500;
+	padding: 0 17px 0 0;
+	font-size: 17px;
+}
+.radio label{
+	display: block;
+	font-weight: 300;
+	font-size: 13px;
+	padding: 0 0 0 39px;
+	position: relative;
+}
+.radio1{
+	background: url(../img/paypal.jpg) 100% 50% no-repeat;
+}
+.radio2{
+	background: url(../img/visa.jpg) 100% 50% no-repeat;
+}
+.radio label::before{
+	position: absolute;
+	content: '';
+	background: url(../img/radio-button-sprite.jpg) 0 0 no-repeat;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	top: -1px;
+	left: 0;
+}
+.radio input:checked + label::before{
+	background-position: 0px -22px;
+}
+.radio input{
+	display: none;
+}
+h4{
+	text-transform: uppercase;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 11px 0;
+	margin: 0;
+}
+h4 span{
+	color: #95c221;
+}
+.credit-card{
+	padding: 0;
+	margin: 0;
+}
+.credit-card input{
+	border-radius: 4px;
+	padding: 10px 15px;
+	font-size: 14px;
+}
+.credit-card input::placeholder{
+    color: #000;
+    opacity: 1;
+}
+.credit-card input:-ms-input-placeholder{
+    color: #000;
+}
+.number input{
+	width: 100%;
+	border: 1px solid #4a610f;
+	background-color: #ebeff0;
+}
+.code input{
+	display: inline-block;
+	width: 240px;
+	border: 1px solid #95c221;
+	padding: 10px 50px 10px 15px;
+}
+.code::after{
+	content: '';
+	background: url(../img/credit-card.jpg) 0 0 no-repeat;
+	display: inline-block;
+	width: 25px;
+	height: 17px;
+	padding: 0;
+	margin: 0 0 -3px -42px;
+}
+.date input{
+	display: inline-block;
+	width: 240px;
+	border: 1px solid #95c221;
+}
+.code, .date{
+	display: inline-block;
+	padding: 6px 0 0 0;
+}
+.date{
+	float: right;
+}
+.form form{
+	padding: 0 0 29px 0;
+	border-bottom: 1px solid #95c221;
+}
+button{
+	vertical-align: top;
+	display: block;
+	background: #96c322;
+	box-shadow: none;
+	border: none;
+	font-size: 16px;
+	padding: 16px;
+	margin: 24px auto 0;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+}
+button::before{
+	content: '';
+	background: url(../img/submit-icon.jpg) 0 0 no-repeat;
+	display: inline-block;
+	width: 11px;
+	height: 17px;
+	padding: 0 12px 0 0;
+	margin: 0 0 -3px 0;
+}
